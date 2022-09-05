@@ -19,7 +19,7 @@ alias gen_landing_page='~/path/to/this/dir/build_landing_page.sh'
 
 ## Notes on using gh pages
 - put the contents of `build` inside a `doc` foler at the root of your repository.
-- pages settings can be found under settings, -> pages. make sure to select the right branch and folder.
+- pages settings can be found under `settings`, `pages`. make sure to select the right branch and folder.
 - more info [here](https://pages.github.com/)
 
 ## resources
