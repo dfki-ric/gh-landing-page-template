@@ -14,6 +14,7 @@ alias gen_landing_page='~/path/to/this/dir/build_landing_page.sh'
 - put images in a folder called `static` that is located in the `src` folder.
 - edit `index.md` to your liking. You can also directly enter `html` code.
 - run `gen_landing_page` from within the `src` folder. This will generate a `build` folder next to the `src`folder
+- pandoc might print this Warning `[WARNING] Could not fetch resource static/logo.svg`. However, it seems as if this can safely be ignored.
 - manually deploy the contens of `build` (e.g. to gh pages) or run `python3 -m http.server` for previewing the site locally.
 
 ## Notes on using gh pages
