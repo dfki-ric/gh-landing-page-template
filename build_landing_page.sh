@@ -21,7 +21,10 @@ rsync -a ${PWD}/static $LANDING_PAGE_BUILD_PATH
 # run pandoc (for now only with the default template) and put everything into the build folder
 HTML=$LANDING_PAGE_RESOURCE_PATH/templates/$TEMPLATE
 CSS=$LANDING_PAGE_RESOURCE_PATH/templates/$STYLE
-pandoc --standalone index.md -o $LANDING_PAGE_BUILD_PATH/index.html --mathjax --css $CSS --template $HTML
+pandoc --self-contained --standalone index.md -o $LANDING_PAGE_BUILD_PATH/index.html --mathjax --css $CSS --template $HTML
+
+# copy over stylesheet
+#rsync -a ${CSS} $LANDING_PAGE_BUILD_PATH
 
 # show the page using pythons simple http server
 #cd ../build/ 
