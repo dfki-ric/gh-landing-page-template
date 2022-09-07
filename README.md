@@ -1,3 +1,5 @@
+# ⚠️ Do not embed youtube videos, as this seems to conflict with DSGVO ⚠️ 
+
 # Landing Page Generator for Publications 
 This Repository contains a bash script to generate landing pages for publications using `pandoc`. These are minimalistic and consist only of a single `.html` file that can conveniently be hosted (e.g. using github pages).
 
