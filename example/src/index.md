@@ -1,15 +1,13 @@
 ---
 title:  Your Paper Title ✨
 github: https://github.com
-pdf: https://google.de
-
-#youtube video id
-#youtube: JVvwMGYiH3A 
+pdf: https://www.dfki.de/web
+youtube: https://www.youtube.com/
 
 authors:
-  - {name: Margret Musterfrau, affiliation_key: 1,   link: https://google.de}
-  - {name: John Doe    ,   affiliation_key: 1,   link: https://google.de}
-  - {name: Karl Schmidt,   affiliation_key: 1 2, link: https://google.de}
+  - {name: Margret Musterfrau, affiliation_key: 1,   link: https://www.dfki.de/web}
+  - {name: John Doe    ,   affiliation_key: 1,   link: https://www.dfki.de/web}
+  - {name: Karl Schmidt,   affiliation_key: 1 2, link: https://www.dfki.de/web}
 affiliations:
   - {name: German Research Center for Artificial Intelligence, affiliation_key: 1, link: https://www.dfki.de/en/web}
   - {name: University of Bremen, affiliation_key: 2, link: https://www.uni-bremen.de/}

@@ -108,12 +108,10 @@ $if(github)$
  $if(pdf)$
   <a href="$pdf$"><i class="fa fa-file-pdf-o" style="font-size:36px; padding:1em;"></i></a>
  $endif$
-</div>
-$if(youtube)$
-<div class="video-wrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/$youtube$" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+ $if(youtube)$
+ <a href="$youtube$"><i class="fa fa-youtube-play" style="font-size:36px; padding:1em;"></i></a>
 $endif$
+</div>
 $body$
 $for(include-after)$
 $include-after$

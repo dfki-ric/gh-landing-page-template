@@ -22,15 +22,16 @@ rsync -a ${PWD}/static $LANDING_PAGE_BUILD_PATH
 HTML=$LANDING_PAGE_RESOURCE_PATH/templates/$TEMPLATE
 CSS=$LANDING_PAGE_RESOURCE_PATH/templates/$STYLE
 
-pandoc --standalone index.md -o $LANDING_PAGE_BUILD_PATH/index.html --mathjax --css $STYLE --template $HTML
 
-# copy over stylesheet
+#pandoc --standalone index.md -o $LANDING_PAGE_BUILD_PATH/index.html --mathjax --css $STYLE --template $HTML
+
+# this builds a totally self contained html (which can be quite large due to mathjax, images, etc. being included)
+# However, maybe this is required to comply with DSGVO
+pandoc --self-contained index.md -o $LANDING_PAGE_BUILD_PATH/index.html --mathjax --css $CSS --template $HTML
+
+# copy over stylesheet (probably not needed for --self-contained)
 rsync -a ${CSS} $LANDING_PAGE_BUILD_PATH
 
-
-
-# this builds a totally self contained html (which can be quite large due to mathjax etc being included)
-#pandoc --self-contained --standalone index.md -o $LANDING_PAGE_BUILD_PATH/index.html --mathjax --css $CSS --template $HTML
 
 # show the page using pythons simple http server
 #cd ../build/ 
