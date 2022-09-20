@@ -40,6 +40,11 @@ $include-before$
 $endfor$
 $if(title)$
 <header id="title-block-header">
+
+$if(top_logo)$
+<img src="$top_logo$" alt="top_logo" style="display:block;margin-left:auto;margin-right:auto;width:200px">
+$endif$ 
+
 <h1 class="title">$title$</h1>
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
